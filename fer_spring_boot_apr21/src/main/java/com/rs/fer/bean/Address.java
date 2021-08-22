@@ -17,6 +17,7 @@ public class Address {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int addressId;
 
+	
 	@Column
 	private String lineone;
 	@Column

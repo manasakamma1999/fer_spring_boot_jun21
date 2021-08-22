@@ -13,11 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.rs.fer.user.request.RegistrationRequest;
-import com.rs.fer.user.request.ResetPasswordRequest;
 import com.rs.fer.user.request.UpdateUserRequest;
 import com.rs.fer.user.response.GetUserResponse;
 import com.rs.fer.user.response.RegistrationResponse;
-import com.rs.fer.user.response.ResetPasswordResponse;
 import com.rs.fer.user.response.UpdateUserResponse;
 import com.rs.fer.user.service.UserService;
 import com.rs.fer.user.validation.UserValidation;
@@ -54,7 +52,7 @@ public class UserController {
 		}
 		return response;
 	}
-	
+
 	@PostMapping("/login")
 	public LoginResponse login(@RequestBody LoginRequest request) {
 
@@ -70,6 +68,7 @@ public class UserController {
 		}
 		return response;
 	}
+	
 
 	// get User
 
@@ -84,7 +83,7 @@ public class UserController {
 		}
 		return response;
 	}
-	
+
 	@PostMapping("/updateUser")
 
 	public UpdateUserResponse updateuser(@RequestBody UpdateUserRequest request) {
@@ -104,6 +103,5 @@ public class UserController {
 		return response;
 
 	}
-
 
 }

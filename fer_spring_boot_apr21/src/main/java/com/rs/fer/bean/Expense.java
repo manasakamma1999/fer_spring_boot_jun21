@@ -18,6 +18,7 @@ public class Expense {
 	@Column
 	private String type;
 
+	
 	@Column
 	private String date;
 

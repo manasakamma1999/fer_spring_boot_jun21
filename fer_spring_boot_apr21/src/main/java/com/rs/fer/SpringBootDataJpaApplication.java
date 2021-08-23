@@ -21,7 +21,6 @@ public class SpringBootDataJpaApplication {
 	public static void main3(String[] args) {
 		SpringApplication.run(SpringBootDataJpaApplication.class, args);
 	}
-
 	
 	
 	

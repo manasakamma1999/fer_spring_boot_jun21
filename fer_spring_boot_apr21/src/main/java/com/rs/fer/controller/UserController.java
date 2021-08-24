@@ -29,14 +29,17 @@ import com.rs.fer.user.validation.UserValidation;
  */
 @RestController
 @RequestMapping("/api")
-public class UserController {
+
+public class UserController {               
 
 	@Autowired
 	UserValidation userValidation;
 
+	
 	@Autowired
 	UserService userService;
 
+	
 	@PostMapping("/registration")
 	public RegistrationResponse registration(@RequestBody RegistrationRequest request) {
 
